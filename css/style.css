@@ -20,6 +20,8 @@ h1 {
     font-size: 12vw;
     font-weight: 500;
     line-height: 0;
+    color: #FCF2EC;
+    filter: drop-shadow(0 1vh 1vh rgba(17, 17, 17, 0.1));
 }
 
 h2 {
@@ -30,7 +32,6 @@ h2 {
     font-weight: 500;
     line-height: 0;
     text-align: center;
-    /* color: #00199F; */
 }
 
 h3 {
@@ -96,23 +97,75 @@ p {
     color: #FCF2EC;
 }
 
+.darkSeashell {
+    color: #E5D2C7;
+}
+
+.green {
+    color: #A7CAB3;
+}
+
+.lilac{
+    color: #7988DA;
+}
+
+.black{
+    color:#111111;
+}
+
 /* Logo and Menu */
 .logo {
     position: fixed;
-    top: 8vh;
+    top: 10vh;
     left: 8vh;
+    z-index:99999;
 }
 
-.menu {
+.menuDropdown {
     position: fixed;
-    top: 8vh;
+    top: 10vh;
     right: 10vh;
+    z-index:99999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
+
+.menuContent {
+    display: none;
+}
+
+.menuDropdown:hover .menuContent {
+    display: block;
+}
+
+.menuContent a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0.5vw 0.5vw 0.5vw 0vw;
+    background-color: rgba(17, 17, 17, 20%);
+    height: 6vh;
+    width: 8vw;
+    font-family: 'Kobe1.1';
+    font-size: 1.7vw;
+    font-weight: 10;
+    line-height: 5%;
+    color: #FCF2EC;
+    text-decoration: none;
+}
+
+.menuContent a:hover,
+.menuContent a:focus {
+    background-color: #00199F;
+}
+
 
 /* Hero Section */
 .heroSection {
     top: 0;
-    background-color: #111111;
+    background-image: linear-gradient(#111111, #2e2b29);
     height: 110vh;
     display: flex;
     justify-content: center;
@@ -138,7 +191,7 @@ p {
     align-items: center;
     height: 50vh;
     width: 80vw;
-    padding-top: 25vh;
+    padding-top: 20vh;
 }
 
 .tabTop {
@@ -202,7 +255,7 @@ p {
 
 button {
     margin-top: 3vh;
-    background-color: #FFF3EC;
+    background-color: #00199F;
     border: 0;
     height: 8vh;
     width: 22vw;
@@ -210,7 +263,6 @@ button {
     font-family: 'HK Grotesk';
     font-size: 1.4vw;
     font-weight: 600;
-    color: #00199F;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -222,7 +274,7 @@ button img {
 
 /* Skills Section */
 .mySkills {
-    background-color: #FCF2EC;
+    background-image: linear-gradient(#D7C6BB, #DBC8BE);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -258,7 +310,7 @@ button img {
     align-items: center;
 }
 
-.right{
+.right {
     padding-top: 8vh;
 }
 
@@ -274,7 +326,7 @@ button img {
 
 /* Selected Work */
 .selectedWork {
-    background-color: #FCF2EC;
+    background-image: linear-gradient(#DBC8BE, #E3D0C6);
     height: 15vh;
     padding-top: 12vh;
     padding-bottom: 6vh;
@@ -285,7 +337,7 @@ button img {
 
 /* Case Study A */
 .caseStudyA {
-    background-color: #FCF2EC;
+    background-image: linear-gradient(#E3D0C6, #E4D1C6);
     height: 120vh;
 }
 
@@ -302,11 +354,16 @@ button img {
 .archContent {
     width: 50vw;
     height: 80vh;
-    padding-top: 26vh;
+    padding-top: 20vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.archContent img{
+    margin-top: 3vh;
+    margin-bottom: -12vh;
 }
 
 .devices {
@@ -339,17 +396,23 @@ button img {
 /* Case Study C */
 .caseStudyC {
     background-color: #7988DA;
-    height: 120vh;
+    height: 130vh;
 }
 
 .caseArchC {
     background-color: #00072A;
-    height: 120vh;
+    height: 110vh;
     border-top-left-radius: 100vw;
     border-top-right-radius: 100vw;
     display: flex;
     align-items: flex-start;
     justify-content: center;
+}
+
+.endCase {
+    width: 100vw;
+    height: 20vh;
+    background-color: #00072A;
 }
 
 /* Footer */
@@ -358,7 +421,7 @@ footer {
     height: 100vh;
 }
 
-.footerHero{
+.footerHero {
     height: 65vh;
     display: flex;
     flex-direction: column;
@@ -371,7 +434,7 @@ footer {
     height: auto;
 }
 
-.linksGroup{
+.linksGroup {
     margin-top: 3vh;
     width: 50vw;
     display: flex;
@@ -380,26 +443,26 @@ footer {
     align-items: center;
 }
 
-.link{
+.link {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
 }
 
-footer h6{
+footer h6 {
     margin-top: 1vh;
     margin-right: 0.2vw;
     margin-left: 0.6vw;
 }
 
-footer h7{
+footer h7 {
     margin-bottom: 1.3vh;
     margin-right: 0.2vw;
     margin-left: 0.6vw;
 }
 
-.copyright{
+.copyright {
     width: 95vw;
     display: flex;
     flex-direction: row;

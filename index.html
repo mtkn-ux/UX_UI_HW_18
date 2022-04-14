@@ -10,17 +10,16 @@
     <header></header>
 
     <section class="nav">
-        <div class="logo">
-            <img src="images/logo.png" alt="Mai Logo">
-        </div>
-        <div class="menu">
-            <img src="images/menu.png" alt="menu">
-            <!-- <ul>
-                    <li>About Me</li>
-                    <li>Skills</li>
-                    <li>My Work</li>
-                    <li>Contact</li>
-                </ul> -->
+        <a class="logo"><img src="images/logo.png" alt="Mai Logo"></a>
+        <div class="menuDropdown">
+            <img class="menuImg" src="images/menu.png" alt="menu">
+            <div class="menuContent">
+                <a href="aboutMe">About Me</a>
+                <a href="aboutMe">Resumé</a>
+                <a href="skills">Skills</a>
+                <a href="myWork">My Work</a>
+                <a href="contact">Contact</a>
+            </div>
         </div>
     </section>
 
@@ -44,7 +43,7 @@
             <div class="left">
                 <h2>About Me</h2>
                 <img id="headshot" src="images/Mai.png" alt="Mai headshot">
-                <button>Check out my resumé<img src="images/download.png" alt="download"></button>
+                <button class="darkSeashell">Check out my resumé<img src="images/download.png" alt="download"></button>
             </div>
             <div class="right">
                 <p>After working in Robotics and <br> Systems Engineering, I wanted to <br> find more meaning by solving
@@ -102,7 +101,7 @@
             <div class="archContent">
                 <h3>Australian Tax Office </h3>
                 <h3>UI Case Study</h3>
-                <img class="devices" src="images/asrcDevices.png" alt="ASRC Devices Mockup">
+                <img class="devices" src="images/atoDevices.png" alt="ASRC Devices Mockup">
                 <h6>Simplifying a government website’s </h6>
                 <h6>information architecture and navigation </h6>
                 <h6>for desktop and mobile sites </h6>
@@ -123,7 +122,9 @@
                 <img class="rightArrow" src="images/rightArrow.png" alt="right arrow">
             </div>
         </div>
+        <div class="endCase"></div>
     </section>
+
 
     <footer>
         <div class="footerHero">
@@ -152,6 +153,6 @@
             <h7>Copyright Mai Nguyen 2022</h7>
         </div>
     </footer>
+<script src="js/index.js"></script>
 </body>
-
 </html>
