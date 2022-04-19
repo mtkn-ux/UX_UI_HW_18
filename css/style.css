@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'Dahlia';
-    src: url("fonts/dahlia-regular.otf") format('opentype'), url("fonts/dahlia-regular.woff") format('woff');
+    src: url("../fonts/dahlia-regular.otf") format('opentype'), url("../fonts/dahlia-regular.woff") format('woff');
     font-family: 'Kobe1.1';
-    src: url("fonts/kobe-regular.ttf") format('truetype'), url("fonts/kobe11-regular.woff") format('woff');
+    src: url("../fonts/kobe-regular.ttf") format('truetype'), url("../fonts/kobe11-regular.woff") format('woff');
     font-family: 'HK Grotesk';
-    src: url("fonts/HKGrotesk-Medium.otf") format('opentype');
+    src: url("../fonts/HKGrotesk-Medium.otf") format('opentype');
 }
 
 body {
