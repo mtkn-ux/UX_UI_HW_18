@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'Dahlia';
-    src: url(fonts/dahlia-regular.otf) format('opentype'), url(fonts/dahlia-regular.woff) format('woff');
+    src: url("fonts/dahlia-regular.otf") format('opentype'), url("fonts/dahlia-regular.woff") format('woff');
     font-family: 'Kobe1.1';
-    src: url(fonts/kobe-regular.ttf) format('truetype'), url(fonts/kobe11-regular.woff) format('woff');
+    src: url("fonts/kobe-regular.ttf") format('truetype'), url("fonts/kobe11-regular.woff") format('woff');
     font-family: 'HK Grotesk';
-    src: url(fonts/HKGrotesk-Medium.otf) format('opentype');
+    src: url("fonts/HKGrotesk-Medium.otf") format('opentype');
 }
 
 body {
@@ -211,47 +211,50 @@ p {
     align-items: center;
 }
 
-.content {
-    height: 80vh;
-    width: 80vw;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
+.twoColContainer{
+    margin: 0 5%;
+    display: grid;
+    grid-template-rows: 80vh;
+    grid-template-columns: 40vw 40vw;
+    grid-template-areas: 
+    "left right";
 }
 
 .left {
-    height: 80vh;
-    width: 50vw;
+    grid-area: left;
+    justify-self: end;
+    align-self: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 9vw;
+    gap: 2vh;
+    padding-left: 0vw;
+} 
+
+.right{
+    grid-area: right;
+    justify-self: start;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5vh;
+    padding-left: 3vw;
+    padding-bottom: 5vh;
 }
 
 #headshot {
-    width: 65%;
+    width: 80%;
     height: auto;
-    padding-top: 3vh;
+    padding-top: -3vh;
 }
-
-
-.right {
-    height: 80vh;
-    width: 50vw;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-}
-
 
 .right p {
     padding-left: 1vw;
     width: auto;
 }
-
 
 button {
     margin-top: 3vh;
@@ -410,7 +413,7 @@ button img {
 }
 
 .endCase {
-    width: 100vw;
+    width: 100%;
     height: 20vh;
     background-color: #00072A;
 }
@@ -469,4 +472,37 @@ footer h7 {
     justify-content: flex-end;
     align-items: flex-end;
     margin-top: 20vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .twoColContainer{
+        height: 80vh;
+        width: 80vw;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "left"
+        "right";
+    }
+    .left {
+        justify-self: center;
+        align-self: start;
+        gap:-20vh;
+    } 
+    .right{
+        justify-self: center;
+        align-self: start;
+        gap: -20vh;
+        padding-left: 0vw;
+        padding-bottom: 0vh;
+    }
+    #headshot{
+        width: 60%;
+        height: auto;
+    }
+
+    .skillsGraphic{
+        display: none;
+    }
 }
