@@ -83,6 +83,15 @@ h7 {
     max-width: 60vw;
 }
 
+h8 {
+    font-family: 'Kobe1.1';
+    font-size: 1vw;
+    font-weight: 10;
+    line-height: 5%;
+    text-align: center;
+    max-width: 60vw;
+}
+
 p {
     margin-top: 3vh;
     margin-bottom: 3vh;
@@ -271,7 +280,8 @@ button {
     border-radius: 6vh;
     font-family: 'HK Grotesk';
     font-size: 1.4vw;
-    font-weight: 600;
+    font-weight: 300;
+    color: #E5D2C7;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -283,7 +293,7 @@ button img {
 
 /* Skills Section */
 .mySkills {
-    background-image: linear-gradient(#D7C6BB, #DBC8BE);
+    background-color: #FCF2EC;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -308,12 +318,12 @@ button img {
 }
 
 .mySkills button {
-    width: 22vw;
-    background-color: #E5D2C7;
+    width: 18vw;
+    background-color: #282828;
 }
 
 .skillsGraphic {
-    padding-left: 4vw;
+    padding-left: 2vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -335,7 +345,7 @@ button img {
 
 /* Selected Work */
 .selectedWork {
-    background-image: linear-gradient(#DBC8BE, #E3D0C6);
+    background-color: #FCF2EC;
     height: 15vh;
     padding-top: 12vh;
     padding-bottom: 6vh;
@@ -346,7 +356,7 @@ button img {
 
 /* Case Study A */
 .caseStudyA {
-    background-image: linear-gradient(#E3D0C6, #E4D1C6);
+    background-color: #FCF2EC;
     height: 120vh;
 }
 
@@ -476,8 +486,15 @@ footer h7 {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
     margin-top: 20vh;
+}
+
+.copyright img{
+    width: 1vw;
+    align-self: center;
+    justify-self: center;
+    margin-right: 0.5vw;
 }
 
 @media only screen and (max-width: 600px) {
