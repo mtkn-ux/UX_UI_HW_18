@@ -67,20 +67,9 @@ h6 {
     font-family: 'Kobe1.1';
     font-size: 2vw;
     font-weight: 10;
-    line-height: 10%;
+    line-height: 150%;
     text-align: center;
-    max-width: 60vw;
-}
-
-h7 {
-    margin-top: 3vh;
-    margin-bottom: 0.8vh;
-    font-family: 'Kobe1.1';
-    font-size: 1.7vw;
-    font-weight: 10;
-    line-height: 5%;
-    text-align: center;
-    max-width: 60vw;
+    max-width: 35vw;
 }
 
 h8 {
